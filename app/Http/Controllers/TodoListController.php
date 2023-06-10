@@ -2,23 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lable;
+use App\Models\Priority;
 use App\Models\TodoList;
 use Illuminate\Http\Request;
-use App\Models\Lable;
 
 class TodoListController extends Controller
 {
  
-    public function index()
-    {
+    public function index(){
+
+
         $todolists = Todolist::all();
 
         return view('home', compact('todolists'));
+
     }
 
   
-    public function store(Request $request)
-    {
+
+
+
+    public function store(Request $request){
+
+
         $data = $request->validate([
 
             'name'=> 'required',
@@ -44,4 +51,24 @@ class TodoListController extends Controller
         $todolist->delete();
         return back();
     }
+
+
+
+   
+
+    // public function updatePriority(Request $request, TodoList $todolist)
+    // {
+    //     $data = $request->validate([
+    //         'priority' => 'required|in:low,normal,high',
+    //     ]);
+
+    //     $priority = Priority::where('name', $data['priority'])->first();
+
+    //     $todolist->priority()->associate($priority);
+    //     $todolist->save();
+
+    //     return back();
+    // }
+
 }
+

@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Priority;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class TodoList extends Model
 {
@@ -13,9 +14,16 @@ class TodoList extends Model
 
     
         'name',
+        'priority_id',
 
 
     ];
+
+
+    public function priorities(): hasMany
+    {
+        return $this->hasMany(Priority::class);
+    }
 
 
  

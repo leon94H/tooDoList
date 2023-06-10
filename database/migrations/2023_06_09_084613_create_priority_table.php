@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('todo_lists', function (Blueprint $table) {
+        Schema::create('priority', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('Low');
+            $table->string('Normal');
+            $table->string('Hig');
             $table->timestamps();
         });
     }
@@ -23,8 +25,9 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('todo_lists');
-    }
+        Schema::dropIfExists('priority');
 
-    
+
+        
+    }
 };

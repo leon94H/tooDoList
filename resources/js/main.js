@@ -11,10 +11,17 @@ todolist.forEach(todolist => {
     todolist.addEventListener('click', ()=>{
 
         todolist.style.textDecoration = "line-through";
+
+        
         
     })
+
+   
         
 });
+
+
+
 
 
 
