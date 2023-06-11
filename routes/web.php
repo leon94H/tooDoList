@@ -35,3 +35,8 @@ Route::get('/labels', [LabelController::class, 'index'])->name('indexLables');
 Route::get('/labels/create', [LabelController::class, 'create'])->name('createLables');
 Route::post('/labels', [LabelController::class, 'store'])->name('storeLables');
 
+
+
+
+
+

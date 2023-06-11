@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+
 use App\Actions\Fortify\CreateNewUser;
 use App\Actions\Fortify\ResetUserPassword;
 use App\Actions\Fortify\UpdateUserPassword;
@@ -44,15 +45,15 @@ class FortifyServiceProvider extends ServiceProvider
 
 
 
+        Fortify::registerView(function () {
+            return view('auth.register');
+        });
+
+
+
         Fortify::loginView(function () {
             return view('auth.login');
         });
-
-
-        Fortify::requestPasswordResetLinkView(function () {
-            return view('auth.forgot-password');
-        });
-
         
     }
 }
