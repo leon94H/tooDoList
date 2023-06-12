@@ -1,4 +1,4 @@
-<h1> todo App Betsson </h1>
+<h1> todo App </h1>
 
 <ul>instructions to test the app</ul>
     <li> register yourself filling all the blank fields and submitt</li>
@@ -8,7 +8,7 @@
     <li>choose the priority</li>
     <li>choose a coloured label</li>
     
-    <href=" http://localhost">
+    <a href=" http://localhost">Click here to see the project</a>
     
     
     
