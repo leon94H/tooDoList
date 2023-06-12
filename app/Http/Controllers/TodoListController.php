@@ -29,6 +29,8 @@ class TodoListController extends Controller
         $data = $request->validate([
 
             'name'=> 'required',
+            'email'=> 'reuired',
+            'password'=> 'required|min:5|confirmed'
             
 
             
