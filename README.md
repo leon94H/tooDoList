@@ -2,6 +2,8 @@
 
 <ol>instructions to test the app
     <br>
+    <br>
+    <br>
     <li> register yourself filling all the blank fields and submitt</li>
     <li> Login </li>
     <li>add the tasks and push the red button</li>
