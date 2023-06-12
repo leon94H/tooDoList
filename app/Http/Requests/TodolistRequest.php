@@ -25,7 +25,8 @@ class TodolistRequest extends FormRequest
             
                 'name'=>'required',
                 'email'=>'required',
-                'password'=>'required|min:5|confirmed',
+                'password'=>'requred',
+                'password'=> 'password_confirmation',
                 
             
         ];
@@ -39,7 +40,7 @@ class TodolistRequest extends FormRequest
             'name.required' => 'the name is required',
             'email.required'=>'the email is required',
             'password.required'=>'the password is required',
-            'password.min'=>'the password must contain at least 5 letters',
+           
             
         ];
     }

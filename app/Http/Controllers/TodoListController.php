@@ -30,7 +30,7 @@ class TodoListController extends Controller
 
             'name'=> 'required',
             'email'=> 'reuired',
-            'password'=> 'required|min:5|confirmed'
+            'password'=> 'password_confirmation'
             
 
             
@@ -48,10 +48,12 @@ class TodoListController extends Controller
 
    
 
-    public function destroy(Todolist $todolist)
-    {
+    public function destroy(Todolist $todolist){
+
+
         $todolist->delete();
         return back();
+        
     }
 
 

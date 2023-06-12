@@ -45,7 +45,7 @@ class LabelConstroller extends Controller
         $todolist->update(['label' => $data['label']]);
         
         return back();
-        }
+    }
   
 }
 

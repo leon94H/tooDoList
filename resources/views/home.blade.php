@@ -32,7 +32,7 @@
             
             
             
-            
+            @auth
             
             @if(count($todolists))
             @foreach ($todolists as $todolist)
@@ -115,7 +115,7 @@
                 @endif
 
 
-
+                @endauth
 
 
                 
