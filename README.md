@@ -7,8 +7,8 @@
     <li>mark as completed</li>
     <li>choose the priority</li>
     <li>choose a coloured label</li>
-    
-    <a href=" http://localhost:5173/" >Click here to see the project</a>
+
+     <a href=" http://localhost:5173/" >Click here to see the project</a>
     
     
     
