@@ -1,7 +1,6 @@
 <h1> todo App </h1>
 
-<ol>instructions to test the app
-    <br>
+<ol>Instructions to test the app
     <br>
     <br>
     <li> register yourself filling all the blank fields and submitt</li>
