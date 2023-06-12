@@ -21,9 +21,7 @@
 
     <div>                                                                                  
         <div class="container-fluid background">
-            {{-- <div class="row justify-content-center">
-                <div class="col-12"> --}}
-    
+           
                     <h1 class="text-center text-white mt-3">Register now</h1>
     
 
@@ -61,10 +59,7 @@
                     
                         <button  type="submit" class="btn btn-primary" id="but">Register</button>
                       </form>
-                      
-                {{-- </div> --}}
-            {{-- </div>
-        </div> --}}
+         
     </div>
 
 
