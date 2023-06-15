@@ -60,19 +60,6 @@ class TodoListController extends Controller
 
    
 
-    // public function updatePriority(Request $request, TodoList $todolist)
-    // {
-    //     $data = $request->validate([
-    //         'priority' => 'required|in:low,normal,high',
-    //     ]);
-
-    //     $priority = Priority::where('name', $data['priority'])->first();
-
-    //     $todolist->priority()->associate($priority);
-    //     $todolist->save();
-
-    //     return back();
-    // }
-
+  
 }
 

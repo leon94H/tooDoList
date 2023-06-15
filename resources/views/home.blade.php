@@ -39,7 +39,7 @@
             
             <div class="d-flex align-items-center justify-content-start" id="todolist">  
                 <ul class="p-0 pointer">
-                    <li id="list">{{$todolist->name}}
+                    <li id="list">{{$todolist->name}}</div>
 
 
 
@@ -53,38 +53,39 @@
                                         </div>
                                         <div class="form-check">
                                             <input type="radio" name="priority" value="normal" class="form-check-input bg-warning" id="exampleCheck{{ $todolist->id }}_2" {{ $todolist->priority == 'normal' ? 'checked' : '' }}>
-                                            <label class="form-check-label" for="exampleCheck{{ $todolist->id }}_2">Normal</label>
+                                            <label class="form-check-label" for="exampleCheck{{ $todolist->id }}_2">Medium</label>
                                         </div>
                                         <div class="form-check">
                                             <input type="radio" name="priority" value="high" class="form-check-input bg-danger" id="exampleCheck{{ $todolist->id }}_3" {{ $todolist->priority == 'high' ? 'checked' : '' }}>
                                             <label class="form-check-label" for="exampleCheck{{ $todolist->id }}_3">High</label>
                                         </div>
-                                        {{-- <button type="submit">Save</button> --}}
+                                         
                                     </form>
-                                </div>
-                            </ul>
-                        </div> 
+
+                               </div>
+                            
+                      
 
                        
                         
                         
                         
                         
-                        {{-- <form action="{{route('destroy', $todolist->id)}}" method="POST"">
-                            
-                            {{-- <i></i>  --}}
-                            
-                            {{-- @csrf
+                       <!-- <form action="{{route('destroy', $todolist->id)}}" method="POST">
+                        
                                 
+                            
+                              @csrf
+                               
                                 
                                 
                                 @method('delete')
                                 
                                 <button type="submit"><i class="fas fa-trash"></i></button>
                                 
-                            </form> --}} 
+                            </form> 
 
-                        {{-- </li> --}}
+                         </li>  -->
 
 
                     
@@ -92,34 +93,35 @@
 
 
 
-                <form class="nav-item dropdown mb-5" id="todo-form">
+                  <form class="nav-item dropdown mt-2 mb-5" id="todo-form">
                   
                     <select id="color-dropdown">
 
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 
-                        <option value="red">🟥</option>
-                        <option value="blue">🟦</option>
-                        <option value="green">🟩</option>
-                        <option value="yellow">🟨</option>
+                        <option value="red">🟥 healt</option>
+                        <option value="blue">🟦 daily-life</option>
+                        <option value="green">🟩 sport</option>
+                        <option value="yellow">🟨work</option>
 
                     </select>
-                </form>
+                    
+                 </form>
 
 
 
 
                 
 
-                @endforeach
-                @endif
+                 @endforeach
+                 @endif
 
 
-                @endauth
+                 @endauth
 
 
                 
-
+                </ul>
                 
 
             </div>
