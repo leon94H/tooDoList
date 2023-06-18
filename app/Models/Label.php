@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Label;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -14,10 +15,10 @@ class Label extends Model
     protected $fillable =[
 
 
-        'red',
-        'blue',
-        'green',
-        'yellow',
+        'red_label',
+        'blue_label',
+        'green_label',
+        'yellow_label',
         
 
     ];
@@ -29,9 +30,4 @@ class Label extends Model
     }
 
 
-    public function label(): BelongsTo{
-
-    return $this->belongsTo(TodoList::class);
-
-
-}}
+    }

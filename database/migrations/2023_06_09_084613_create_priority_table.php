@@ -13,10 +13,11 @@ return new class extends Migration
     {
         Schema::create('priority', function (Blueprint $table) {
             $table->id();
-            $table->string('Low');
-            $table->string('Normal');
-            $table->string('Hig');
+            $table->string('low');
+            $table->string('normal');
+            $table->string('high');
             $table->timestamps();
+            
         });
     }
 
@@ -25,8 +26,8 @@ return new class extends Migration
      */
     public function down(): void
     {
+       
         Schema::dropIfExists('priority');
-
 
         
     }

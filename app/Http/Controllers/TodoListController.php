@@ -26,7 +26,7 @@ class TodoListController extends Controller
     public function store(Request $request){
 
 
-        $data = $request->validate([
+        $todolist = $request->validate([
 
             'name'=> 'required',
             'email'=> 'reuired',
@@ -37,11 +37,11 @@ class TodoListController extends Controller
         ]);
 
 
-        // return view('nome_vista')->with('todolists', $todolists)->withInput();
+    
 
 
         
-        Todolist::create($data);
+        Todolist::create($todolist);
         return back();
 
     }

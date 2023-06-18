@@ -10,33 +10,27 @@ class Priority extends Model
 {
     use HasFactory;
 
-    protected $fillable =[
-
-
-        'low',
-        'normal',
-        'hig',
+    protected $primaryKey = 'id';
+    protected $fillable = [
         
+        'low_priority',
+        'normal_priority',
+        'high_priority',
+
 
     ];
 
 
-    // public function shops(): BelongsToMany
-    // {
-    //     return $this->belongsToMany(Shop::class);
-    // }
+
+    public function todolist(): BelongsTo{
 
 
-    public function todolist(): BelongsTo
-    {
         return $this->belongsTo(Todolist::class);
+
+        
     }
 
 
-    public function priority(): BelongsTo{
-
-    return $this->belongsTo(TodoList::class);
-}
 
 
 

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Label;
 use App\Models\Priority;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,15 +16,26 @@ class TodoList extends Model
     
         'name',
         'priority_id',
+        'label_id',
 
 
     ];
 
 
-    public function priorities(): hasMany
+    public function priorities(): hasOne
     {
-        return $this->hasMany(Priority::class);
+        return $this->hasOne(Priority::class);
     }
+
+
+    public function labels(): hasOne
+    {
+        return $this->hasOne(Label::class);
+    }
+
+
+
+
 
 
  

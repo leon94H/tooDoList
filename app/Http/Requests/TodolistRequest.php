@@ -28,6 +28,7 @@ class TodolistRequest extends FormRequest
                 'password'=>'requred',
                 'password'=> 'password_confirmation',
                 
+                
             
         ];
     }

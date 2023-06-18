@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('labels', function (Blueprint $table) {
             $table->id();
-            $table->string('color');
+            $table->string('red');
+            $table->string('blue');
+            $table->string('green');
+            $table->string('yellow');
             $table->timestamps();
         });
     }
