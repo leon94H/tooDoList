@@ -9,6 +9,8 @@
     <li>mark as completed</li>
     <li>choose the priority</li>
     <li>choose a coloured label</li>
+
+    <a href="http://127.0.0.1:8000/"> Here the app </app>
 </ol>
     
     
